@@ -23,7 +23,6 @@ header h1 {
   width: 100%;
   height: 150%;
   background-color: #25282b;
-  opacity: 0.7;
   z-index: 3;
   position: absolute;
   top: 0;
@@ -48,10 +47,10 @@ header h1 {
 }
 
 .bcg .sideBar .x {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  border-bottom: 1px solid #ebecef;
   cursor: pointer;
 }
 
@@ -78,6 +77,7 @@ header h1 {
 .bcg .sideBar button {
   width: 120px;
   height: 50px;
+  margin-bottom: 20px;
   background-color: #fff;
   border-radius: 6px;
   text-decoration: none;
@@ -89,9 +89,10 @@ header h1 {
 }
 
 .bcg .sideBar .edit {
-  border: 2px solid #090980;
-  color: #090980;
+  border: 2px solid #213c9a;
+  color: #213c9a;
   margin: 0 20px;
+  box-shadow: -4px 4px 24px rgba(0, 0, 0, 0.18);
 }
 
 .bcg .sideBar .edit:hover {
@@ -100,8 +101,9 @@ header h1 {
 }
 
 .bcg .sideBar .remove {
-  border: 2px solid #c00000;
-  color: #c00000;
+  border: 2px solid #FB4E4E;
+  color: #fb4e4e;
+  box-shadow: -4px 4px 24px rgba(0, 0, 0, 0.18);
 }
 
 .bcg .sideBar .remove:hover {
@@ -152,19 +154,20 @@ header h1 {
   height: 50px;
   margin: 25px 40px;
   background-color: #fff;
-  border-radius: 6px;
   text-decoration: none;
   box-shadow: none;
   border: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .removeModalBackground .removeModal .cancel {
-  border: 2px solid #090980;
-  color: #090980;
+  border: 2px solid #213c9a;
+  color: #213c9a;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .removeModalBackground .removeModal .cancel:hover {
@@ -173,8 +176,9 @@ header h1 {
 }
 
 .removeModalBackground .removeModal .remove {
-  border: 2px solid #c00000;
-  color: #c00000;
+  border: 2px solid #FB4E4E;
+  color: #fff;
+  background-color: #fb4e4e;
 }
 
 .removeModalBackground .removeModal .remove:hover {
@@ -190,27 +194,36 @@ header h1 {
   padding: 6px;
   margin: 20px;
   border: 1px solid rgba(0, 0, 0, 0.158);
+  border-radius: 8px;
 }
 
 .editSideBarWrapper textarea {
   height: 300px;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .editSideBarWrapper button.save {
-  border: 2px solid #09800f;
-  color: #09800f;
+  border: 2px solid #213c9a;
+  color: #fff;
   margin-right: 20px;
+  background: #213c9a;
+  border-radius: 8px;
+  margin-left: 20px;
 }
 
 .editSideBarWrapper button.save:hover {
-  border: 2px solid #013d15;
-  color: #013d15;
+  background: #111f50;
+  border: 2px solid #111f50;
 }
 
 .editSideBarWrapper button.cancel {
-  border: 2px solid #090980;
-  color: #090980;
-  margin-right: 20px;
+  border: 2px solid #213c9a;
+  border-radius: 8px;
+  color: #213c9a;
 }
 
 .editSideBarWrapper button.cancel:hover {
