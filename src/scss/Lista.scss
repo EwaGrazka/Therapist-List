@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
 }
+.Toastify__toast--success {
+  background-color: rgb(31, 138, 40) !important;
+}
+
+.Toastify__toast--warning {
+  background-color: rgb(143, 111, 23) !important;
+}
 header {
   display: flex;
   margin: 20px 30px;
@@ -45,9 +52,12 @@ header {
     h1 {
       font-size: 18px;
       padding: 30px;
-      position: fixed;
-      background-color: #fff;
-      width: 100%;
+
+      &.info {
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+      }
     }
     h3 {
       font-size: 14px;

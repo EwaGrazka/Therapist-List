@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../scss/Lista.scss";
 import Pagination from "@material-ui/lab/Pagination";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { connect } from "react-redux";
 import {
@@ -39,6 +41,9 @@ class List extends Component {
       this.handleInitialState();
     }
   }
+
+  // notify = () => toast("Pomyślnie zmieniono dane.");
+
   handleClick = (id) => {
     this.setState({
       isSideBarVisible: true,
@@ -90,6 +95,7 @@ class List extends Component {
 
   handleRemoveTherapist = (id) => {
     this.props.removeTherapist(id);
+    toast.warn("Dane terapeuty zostały usunięte.");
     this.setState({
       isModalOpen: false,
     });
@@ -97,6 +103,7 @@ class List extends Component {
 
   handleEditTherapist = (fullName, aboutMe, id) => {
     this.props.editTherapist(fullName, aboutMe, id);
+    toast.success("Pomyślnie zmieniono dane.");
     this.setState({
       isEditSideBarOpen: false,
     });
@@ -125,6 +132,7 @@ class List extends Component {
 
     return (
       <>
+        <ToastContainer />
         <header>
           <svg
             width="28"
@@ -163,7 +171,7 @@ class List extends Component {
                 </span>
                 {!isEditSideBarOpen ? (
                   <div>
-                    <h1>Informacja o specjaliście</h1>
+                    <h1 className="info">Informacja o specjaliście</h1>
 
                     <h3 className="name">Imię i nazwisko</h3>
 
