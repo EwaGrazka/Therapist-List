@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Grewka/TherapistList/static/css/main.3fa28776.chunk.css",
-    "main.js": "/Grewka/TherapistList/static/js/main.d520c5c7.chunk.js",
-    "main.js.map": "/Grewka/TherapistList/static/js/main.d520c5c7.chunk.js.map",
-    "runtime-main.js": "/Grewka/TherapistList/static/js/runtime-main.13981646.js",
-    "runtime-main.js.map": "/Grewka/TherapistList/static/js/runtime-main.13981646.js.map",
-    "static/js/2.61bce739.chunk.js": "/Grewka/TherapistList/static/js/2.61bce739.chunk.js",
-    "static/js/2.61bce739.chunk.js.map": "/Grewka/TherapistList/static/js/2.61bce739.chunk.js.map",
-    "static/js/3.2daf82f4.chunk.js": "/Grewka/TherapistList/static/js/3.2daf82f4.chunk.js",
-    "static/js/3.2daf82f4.chunk.js.map": "/Grewka/TherapistList/static/js/3.2daf82f4.chunk.js.map",
-    "index.html": "/Grewka/TherapistList/index.html",
-    "static/css/main.3fa28776.chunk.css.map": "/Grewka/TherapistList/static/css/main.3fa28776.chunk.css.map",
-    "static/js/2.61bce739.chunk.js.LICENSE.txt": "/Grewka/TherapistList/static/js/2.61bce739.chunk.js.LICENSE.txt"
+    "main.css": "/TherapistList/static/css/main.3fa28776.chunk.css",
+    "main.js": "/TherapistList/static/js/main.d520c5c7.chunk.js",
+    "main.js.map": "/TherapistList/static/js/main.d520c5c7.chunk.js.map",
+    "runtime-main.js": "/TherapistList/static/js/runtime-main.cd0734fd.js",
+    "runtime-main.js.map": "/TherapistList/static/js/runtime-main.cd0734fd.js.map",
+    "static/js/2.61bce739.chunk.js": "/TherapistList/static/js/2.61bce739.chunk.js",
+    "static/js/2.61bce739.chunk.js.map": "/TherapistList/static/js/2.61bce739.chunk.js.map",
+    "static/js/3.2daf82f4.chunk.js": "/TherapistList/static/js/3.2daf82f4.chunk.js",
+    "static/js/3.2daf82f4.chunk.js.map": "/TherapistList/static/js/3.2daf82f4.chunk.js.map",
+    "index.html": "/TherapistList/index.html",
+    "static/css/main.3fa28776.chunk.css.map": "/TherapistList/static/css/main.3fa28776.chunk.css.map",
+    "static/js/2.61bce739.chunk.js.LICENSE.txt": "/TherapistList/static/js/2.61bce739.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.13981646.js",
+    "static/js/runtime-main.cd0734fd.js",
     "static/js/2.61bce739.chunk.js",
     "static/css/main.3fa28776.chunk.css",
     "static/js/main.d520c5c7.chunk.js"
