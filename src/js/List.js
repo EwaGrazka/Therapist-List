@@ -165,7 +165,7 @@ class List extends Component {
                   <div>
                     <h1>Informacja o specjaliście</h1>
 
-                    <h3>Imię i nazwisko</h3>
+                    <h3 className="name">Imię i nazwisko</h3>
 
                     {therapistDetails &&
                     therapistDetails.fullName &&
@@ -211,22 +211,26 @@ class List extends Component {
                     {therapistDetails &&
                     therapistDetails.aboutMe &&
                     therapistDetails.aboutMe !== "" ? (
-                      <p>{aboutMe || therapistDetails.aboutMe}</p>
+                      <p className="aboutMe">
+                        {aboutMe || therapistDetails.aboutMe}
+                      </p>
                     ) : (
                       <p>Brak danych</p>
                     )}
-                    <button
-                      className="edit"
-                      onClick={() => this.handleOpenEditModal()}
-                    >
-                      Edytuj
-                    </button>
-                    <button
-                      className="remove"
-                      onClick={() => this.handleOpenRemoveModal()}
-                    >
-                      Usuń
-                    </button>
+                    <div className="mainButtonsWrapper">
+                      <button
+                        className="edit"
+                        onClick={() => this.handleOpenEditModal()}
+                      >
+                        Edytuj
+                      </button>
+                      <button
+                        className="remove"
+                        onClick={() => this.handleOpenRemoveModal()}
+                      >
+                        Usuń
+                      </button>
+                    </div>
                   </div>
                 ) : (
                   <div className="editSideBarWrapper">
