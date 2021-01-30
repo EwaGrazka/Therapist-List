@@ -2,10 +2,23 @@
   margin: 0;
   padding: 0;
 }
+header {
+  display: flex;
+  margin: 20px 30px;
+  height: 26px;
+  .logo {
+    margin-top: 8px;
+  }
+  h1 {
+    margin-left: 20px;
+    margin-top: 8px;
+    font-size: 20px;
+  }
+}
 .bcg {
   width: 100%;
   height: 150%;
-  background-color: rgba(0, 0, 0, 0.37);
+  background-color: #25282b;
   z-index: 3;
   position: absolute;
   top: 0;
@@ -20,11 +33,15 @@
     background-color: white;
     z-index: 4;
     overflow-y: auto;
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
     .x {
-      position: absolute;
-      top: 5px;
-      right: 10px;
-      font-size: 20px;
+      // position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+      border-bottom: 1px solid #ebecef;
       cursor: pointer;
     }
     h1 {
@@ -47,7 +64,7 @@
     button {
       width: 120px;
       height: 50px;
-      margin: 40px;
+      margin-bottom: 20px;
       background-color: #fff;
       border-radius: 6px;
       text-decoration: none;
@@ -58,21 +75,27 @@
       cursor: pointer;
     }
     .edit {
-      border: 2px solid rgb(9, 9, 128);
-      color: rgb(9, 9, 128);
-      margin-right: 20px;
+      border: 2px solid #213c9a;
+      color: #213c9a;
+      margin: 0 20px;
+      box-shadow: -4px 4px 24px rgba(0, 0, 0, 0.18);
       &:hover {
         border: 2px solid rgb(1, 1, 37);
         color: rgb(1, 1, 37);
       }
     }
     .remove {
-      border: 2px solid rgb(192, 0, 0);
-      color: rgb(192, 0, 0);
+      border: 2px solid#FB4E4E;
+      color: #fb4e4e;
+      box-shadow: -4px 4px 24px rgba(0, 0, 0, 0.18);
 
       &:hover {
         border: 2px solid rgb(75, 3, 3);
         color: rgb(75, 3, 3);
+      }
+      @media screen and (max-width: 950px) {
+        margin-top: 20px;
+        margin-left: 20px;
       }
     }
   }
@@ -109,26 +132,29 @@
       height: 50px;
       margin: 25px 40px;
       background-color: #fff;
-      border-radius: 6px;
+
       text-decoration: none;
       box-shadow: none;
       border: none;
       text-transform: uppercase;
       letter-spacing: 1px;
       cursor: pointer;
+      border-radius: 8px;
     }
     .cancel {
-      border: 2px solid rgb(9, 9, 128);
-      color: rgb(9, 9, 128);
+      border: 2px solid #213c9a;
+      color: #213c9a;
       margin-right: 20px;
+      margin-left: 20px;
       &:hover {
         border: 2px solid rgb(1, 1, 37);
         color: rgb(1, 1, 37);
       }
     }
     .remove {
-      border: 2px solid rgb(192, 0, 0);
-      color: rgb(192, 0, 0);
+      border: 2px solid#FB4E4E;
+      color: #fff;
+      background-color: #fb4e4e;
 
       &:hover {
         border: 2px solid rgb(192, 0, 0);
@@ -146,24 +172,34 @@
     padding: 6px;
     margin: 20px;
     border: 1px solid rgba(0, 0, 0, 0.158);
+    border-radius: 8px;
   }
   textarea {
     height: 300px;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   button.save {
-    border: 2px solid rgb(9, 128, 15);
-    color: rgb(9, 128, 15);
+    border: 2px solid #213c9a;
+    color: #fff;
     margin-right: 20px;
+    background: #213c9a;
+    border-radius: 8px;
+    margin-left: 20px;
     &:hover {
-      border: 2px solid rgb(1, 61, 21);
-      color: rgb(1, 61, 21);
+      background: #111f50;
+      border: 2px solid #111f50;
     }
   }
   button.cancel {
-    border: 2px solid rgb(9, 9, 128);
-    color: rgb(9, 9, 128);
-    margin-right: 20px;
+    border: 2px solid #213c9a;
+    border-radius: 8px;
+    color: #213c9a;
+
     &:hover {
       border: 2px solid rgb(1, 1, 37);
       color: rgb(1, 1, 37);
@@ -171,18 +207,18 @@
   }
 }
 .listWrapper {
-  width: 90%;
+  width: 85%;
   display: flex;
 
   margin: 50px auto;
 
   .specialistsWrapper,
   .specializationWrapper {
-    background-color: rgb(248, 245, 245);
+    background-color: #fff;
 
     h2 {
       height: 60px;
-      background-color: rgba(223, 219, 219, 0.966);
+      background-color: #f9f9fa;
       border: 1px solid rgba(0, 0, 0, 0.158);
       display: flex;
       justify-content: center;
