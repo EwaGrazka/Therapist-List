@@ -220,6 +220,13 @@
   border: 1px solid rgba(0, 0, 0, 0.158);
 }
 
+@media screen and (max-width: 700px) {
+  .listWrapper .specialistsWrapper .specialist {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .listWrapper .specialistsWrapper .specialist img {
   height: 40px;
   width: 40px;
@@ -229,10 +236,25 @@
   font-size: 0;
 }
 
+@media screen and (max-width: 700px) {
+  .listWrapper .specialistsWrapper .specialist img {
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+}
+
 .listWrapper .specialistsWrapper .specialist li {
   height: 60px;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .listWrapper .specialistsWrapper .specialist li {
+    height: 80px;
+    padding: 5px;
+    text-align: center;
+  }
 }
 
 .listWrapper .specializationWrapper {
@@ -247,7 +269,14 @@
   border: 1px solid rgba(0, 0, 0, 0.158);
   list-style-type: none;
   position: relative;
+  font-size: 16px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .listWrapper .specializationWrapper .speciallization {
+    height: 150px;
+  }
 }
 
 .listWrapper .specializationWrapper .speciallization:hover div.specInfo {
