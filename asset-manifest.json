@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/TherapistList/static/css/main.9162d46b.chunk.css",
-    "main.js": "/TherapistList/static/js/main.d520c5c7.chunk.js",
-    "main.js.map": "/TherapistList/static/js/main.d520c5c7.chunk.js.map",
+    "main.css": "/TherapistList/static/css/main.4cf612a1.chunk.css",
+    "main.js": "/TherapistList/static/js/main.bca395a7.chunk.js",
+    "main.js.map": "/TherapistList/static/js/main.bca395a7.chunk.js.map",
     "runtime-main.js": "/TherapistList/static/js/runtime-main.cd0734fd.js",
     "runtime-main.js.map": "/TherapistList/static/js/runtime-main.cd0734fd.js.map",
     "static/js/2.61bce739.chunk.js": "/TherapistList/static/js/2.61bce739.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.2daf82f4.chunk.js": "/TherapistList/static/js/3.2daf82f4.chunk.js",
     "static/js/3.2daf82f4.chunk.js.map": "/TherapistList/static/js/3.2daf82f4.chunk.js.map",
     "index.html": "/TherapistList/index.html",
-    "static/css/main.9162d46b.chunk.css.map": "/TherapistList/static/css/main.9162d46b.chunk.css.map",
+    "static/css/main.4cf612a1.chunk.css.map": "/TherapistList/static/css/main.4cf612a1.chunk.css.map",
     "static/js/2.61bce739.chunk.js.LICENSE.txt": "/TherapistList/static/js/2.61bce739.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cd0734fd.js",
     "static/js/2.61bce739.chunk.js",
-    "static/css/main.9162d46b.chunk.css",
-    "static/js/main.d520c5c7.chunk.js"
+    "static/css/main.4cf612a1.chunk.css",
+    "static/js/main.bca395a7.chunk.js"
   ]
 }
