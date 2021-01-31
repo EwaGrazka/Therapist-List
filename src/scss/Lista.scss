@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
 }
+.Toastify__toast--success {
+  background-color: #213c9a !important;
+}
+
+.Toastify__toast--warning {
+  background-color: #fb4e4e !important;
+}
 header {
   display: flex;
   margin: 20px 30px;
@@ -18,15 +25,16 @@ header {
 .bcg {
   width: 100%;
   height: 150%;
-  background-color: #25282b;
+  background-color: #25282bb7;
   z-index: 3;
   position: absolute;
   top: 0;
   left: 0;
 
   .sideBar {
-    height: 100%;
     width: 30%;
+    height: 100%;
+    overflow-y: auto;
     position: absolute;
     top: 0;
     right: 0;
@@ -36,27 +44,62 @@ header {
     @media screen and (max-width: 700px) {
       width: 100%;
     }
-    .x {
-      // position: absolute;
-      display: flex;
-      justify-content: flex-end;
-      padding: 20px;
-      border-bottom: 1px solid #ebecef;
-      cursor: pointer;
+    @media screen and (min-width: 700px) and (max-width: 1028px) {
+      width: 50%;
     }
+    .sideBarHeader {
+      position: fixed;
+      width: 30%;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+      }
+      @media screen and (min-width: 700px) and (max-width: 1028px) {
+        width: 50%;
+      }
+
+      .x {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        margin: 0;
+        border-bottom: 1px solid #ebecef;
+        background-color: #fff;
+        cursor: pointer;
+      }
+      h1 {
+        font-size: 18px;
+        padding: 30px;
+
+        &.info {
+          background-color: #fff;
+          padding: 20px;
+        }
+      }
+    }
+
     h1 {
       font-size: 18px;
       padding: 30px;
+
+      &.info {
+        background-color: #fff;
+      }
     }
     h3 {
       font-size: 14px;
       color: rgb(175, 166, 166);
       font-weight: 600;
       padding: 0px 30px 0 20px;
+      &.name {
+        padding-top: 110px;
+      }
     }
 
     p {
       padding: 10px 20px 20px;
+      &.aboutMe {
+        margin-bottom: 100px;
+      }
       li {
         list-style-type: none;
       }
@@ -74,6 +117,14 @@ header {
       letter-spacing: 1px;
       cursor: pointer;
     }
+    .mainButtonsWrapper {
+      position: fixed;
+      bottom: 0px;
+      background-color: #fff;
+      width: 100%;
+      padding-top: 20px;
+    }
+
     .edit {
       border: 2px solid #213c9a;
       color: #213c9a;
@@ -113,7 +164,8 @@ header {
   justify-content: center;
   align-items: center;
   .removeModal {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     z-index: 5;
     background-color: #fff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -128,9 +180,9 @@ header {
       padding: 20px;
     }
     button {
-      width: 120px;
-      height: 50px;
-      margin: 25px 40px;
+      width: 100px;
+      height: 40px;
+      margin: 15px 10px;
       background-color: #fff;
 
       text-decoration: none;
@@ -167,7 +219,7 @@ header {
 .editSideBarWrapper {
   input,
   textarea {
-    width: 300px;
+    width: 270px;
     height: 20px;
     padding: 6px;
     margin: 20px;
@@ -175,7 +227,8 @@ header {
     border-radius: 8px;
   }
   textarea {
-    height: 300px;
+    width: 270px;
+    height: 270px;
     border-radius: 8px;
     font-style: normal;
     font-weight: normal;
@@ -235,7 +288,7 @@ header {
         flex-direction: column;
         align-items: center;
       }
-
+      cursor: pointer;
       img {
         height: 40px;
         width: 40px;
@@ -243,6 +296,7 @@ header {
         border-radius: 50%;
         display: flex;
         font-size: 0;
+
         @media screen and (max-width: 700px) {
           margin-top: 10px;
           margin-bottom: -10px;
@@ -252,6 +306,7 @@ header {
         height: 60px;
         display: flex;
         align-items: center;
+
         @media screen and (max-width: 700px) {
           height: 80px;
           padding: 5px;
@@ -271,10 +326,12 @@ header {
       list-style-type: none;
       position: relative;
       font-size: 16px;
+      cursor: pointer;
       @media screen and (max-width: 700px) {
         height: 150px;
+        padding: 0 10px;
       }
-      cursor: pointer;
+
       &:hover div.specInfo {
         display: initial;
         position: absolute;
